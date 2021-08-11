@@ -18,7 +18,7 @@ const me = {
   favThreeFoods: ['lasagna', 'injera', 'sushi']
 };
 
-console.log('A little about me:', me, me.favThreeFoods);
+// console.log('A little about me:', me);
 
 
 /* 2. Accessing object properties.
@@ -45,6 +45,9 @@ console.log('last favorite food:', me.favThreeFoods[2]);
   - Set your object's shoeCount to be what it was plus 1
   - Console.log your updated shoe count.
 */
+console.log('Current shoe count:', me.shoeCount);
+me.shoeCount = 13 +1; // updated shoeCount
+console.log('Updated shoe count:', me.shoeCount);
 
 
 /* 5. Add a new property to an existing object.
@@ -53,3 +56,5 @@ console.log('last favorite food:', me.favThreeFoods[2]);
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+me.favoriteColor = 'blue'; // new property
+console.log('Updated object:', me);
